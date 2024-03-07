@@ -22,7 +22,7 @@
                 <tbody>
                     @foreach ($drivers as $driver)
                         <tr>
-                            <input type="hidden" value="{{ $driver['id'] }}"/>
+                            <input type="hidden" value="{{ $driver->id }}"/>
                             <td>{{ $driver->number }}</td>
                             <td>{{ $driver->name }}</td>
                             <td>{{ $driver->team }}</td>
@@ -30,7 +30,7 @@
                         </tr>
                     @endforeach
                 </tbody>
-                
+
             </table>
         </div>
     </div>

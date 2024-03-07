@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DriversController;
+use App\Http\Controllers\RacesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-    Route::get('/pilotos', [DriversController::class, 'getDrivers']);
+Route::get('/', function () {
+    return view('Template.blank');
+});
+
+Route::get('/pilotos', [DriversController::class, 'getDrivers']);
+
+Route::get('/corridas', [RacesController::class, 'getRaces']);

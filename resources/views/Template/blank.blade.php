@@ -43,14 +43,14 @@
 
              <!-- Nav Item - Dashboard -->
              <li class="nav-item active">
-                 <a class="nav-link" href="index.html">
+                 <a class="nav-link" href="/pilotos">
                      <i class="fas fa-fw fa-user"></i>
                      <span>Pilotos 2024</span></a>
              </li>
              
              <!-- Nav Item - Dashboard -->
              <li class="nav-item active">
-                 <a class="nav-link" href="index.html">
+                 <a class="nav-link" href="/corridas">
                      <i class="fas fa-fw fa-calendar"></i>
                      <span>Calendario 2024</span></a>
              </li>
