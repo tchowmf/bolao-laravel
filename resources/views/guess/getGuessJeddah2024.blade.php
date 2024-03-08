@@ -75,6 +75,15 @@
                         <td>N/A</td>
                         <td>N/A</td>
                     </tr>
+
+                    <tr>
+                        <td>Sallasmandra</td>
+                        <td>MAX VERSTAPPEN</td>
+                        <td></td>
+                        <td>MAX VERSTAPPEN</td>
+                        <td>SERGIO PEREZ</td>
+                        <td>FERNANDO ALONSO</td>
+                    </tr>
                 </tbody>
 
             </table>
