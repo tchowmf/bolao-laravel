@@ -45,8 +45,8 @@
                         <td>MAX VERSTAPPEN</td>
                         <td></td>
                         <td>MAX VERSTAPPEN</td>
+                        <td>CHARLES LECLERC</td>
                         <td>SERGIO PEREZ</td>
-                        <td>CARLOS SAINZ</td>
                     </tr>
 
                     <tr>
