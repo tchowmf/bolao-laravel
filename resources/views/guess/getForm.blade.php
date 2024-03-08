@@ -20,7 +20,7 @@
     @endif
 
     <div class="card">
-        <div class="card-body">
+        <div class="card-body table-responsive">
             <form method="post" action="">
                 @CSRF
                 <input type="hidden" name="race_id" value="2"/>
