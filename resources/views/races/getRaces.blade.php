@@ -5,18 +5,18 @@
 
     <!-- Page Heading -->
     <div class="d-flex justify-content-between mb-3">
-        <h2 class="h3 mb-0 text-gray-800">Corridas</h2>
+        <h2 class="h3 mb-0 text-gray-800">CAMPEONATO MUNDIAL DE FÓRMULA 1 - CALENDÁRIO DE PROVAS 2024</h2>
     </div>
 
     <div class="card">
         <div class="card-body">
-            <table id="dataTable" class="table table-bordered">
+            <table  class="table table-bordered">
 
                 <thead>
                     <th>NUMERO</th>
                     <th>DATA</th>
                     <th>HORA</th>
-                    <th>PAIS/CIDADE</th>
+                    <th>PAÍS/CIDADE</th>
                     <th>CIRCUITO</th>
                     <th>VOLTAS</th>
                 </thead>
@@ -26,7 +26,7 @@
                         <tr>
                             <input type="hidden" value="{{ $race->id }}"/>
                             <td>{{ $race->id }}</td>
-                            <td>{{ $race->date }}</td>
+                            <td>{{ \Carbon\Carbon::parse($race->date)->format('d/m/Y') }}</td>
                             <td>{{ $race->time }}</td>
                             <td>{{ $race->country }}</td>
                             <td>{{ $race->city }}</td>

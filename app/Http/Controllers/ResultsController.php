@@ -3,79 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Driver;
-use App\Models\Guess;
 use App\Models\Race;
 use App\Models\User;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Validator;
 
-class GuessController extends Controller
+class ResultsController extends Controller
 {
-    public function getGuess(): View
+    public function getResults(): View
     {
         $races = Race::all();
 
-        return view('guess.getGuess', compact('races'));
+        return view('results.getRacesResult', compact('races'));
     }
 
-    public function getForm()
+    public function getRank(): View
     {
-        $drivers = Driver::all();
+        $users = User::orderBy('points', 'DESC')->get();
 
-        return view('guess.getForm', compact('drivers'));
+        return view('rank.getRank', compact('users'));
     }
 
-    public function postGuess(Request $request)
+    public function getRaceResult($country): View
     {
-        // Validar os campos do formulário
-        $validator = Validator::make($request->all(), [
-            'code' => 'required|string|max:21',
-            'pole' => 'required|string|max:21',
-            'first' => 'required|string|max:21',
-            'second' => 'required|string|max:21',
-            'third' => 'required|string|max:21',
-        ]);
-
-        // Verificar se a validação falhou
-        if ($validator->fails()) {
-            return back()->withErrors($validator)->withInput();
-        }
-
-        $user = User::where('code', $request->code)->first();
-
-        // Se nenhum usuário for encontrado com o código fornecido
-        if (!$user) {
-            return back()->with('error', 'Código do usuário incorreto.');
-        }
-
-        // Criar e salvar o palpite no banco de dados
-        $guess = new Guess();
-        $guess->user_id = $user->id;
-        $guess->race_id = $request->race_id;
-        $guess->pole = $request->pole;
-        $guess->first = $request->first;
-        $guess->second = $request->second;
-        $guess->third = $request->third;
-        $guess->save();
-
-        return back()->with('success', 'Palpite enviado com sucesso.');
-    }
-
-
-    public function getRaceGuess($city): View
-    {
-        switch ($city) {
+        switch ($country) {
             case 'BAHREIN':
-                return view('guess.getGuessBahrein2024');
+                return view('results.getResultBahrein2024');
                 break;
-            case 'ARÁBIA SAUDITA':
-                return view('guess.getGuessJeddah2024');
+            /*case 'ARÁBIA SAUDITA':
+                return view('results.getResultJeddah2024');
                 break;
-            /*case 'AUSTRÁLIA':
+            case 'AUSTRÁLIA':
                 return view('guess.getAustralia2024');
                 break;
             case 'JAPÃO':
@@ -147,5 +105,4 @@ class GuessController extends Controller
                 break;
         }
     }
-
 }

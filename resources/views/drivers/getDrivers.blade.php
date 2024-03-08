@@ -5,12 +5,12 @@
 
     <!-- Page Heading -->
     <div class="d-flex justify-content-between mb-3">
-        <h2 class="h3 mb-0 text-gray-800">PILOTOS</h2>
+        <h2 class="h3 mb-0 text-gray-800">CAMPEONATO MUNDIAL DE FÓRMULA 1 - PILOTOS 2024</h2>
     </div>
 
     <div class="card">
         <div class="card-body">
-            <table id="dataTable" class="table table-bordered">
+            <table  class="table table-bordered">
 
                 <thead>
                     <th>NUMERO</th>

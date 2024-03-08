@@ -12,13 +12,13 @@
     <title>@yield('title', 'Bolão F1 Pederneiras')</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="{{ asset('/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
 </head>
 
@@ -41,44 +41,44 @@
              <!-- Divider -->
              <hr class="sidebar-divider my-0">
 
-             <!-- Nav Item - Dashboard -->
+             <!-- Nav Item - Drivers -->
              <li class="nav-item active">
-                 <a class="nav-link" href="/pilotos">
+                 <a class="nav-link" href="../pilotos">
                      <i class="fas fa-fw fa-user"></i>
                      <span>Pilotos 2024</span></a>
              </li>
              
-             <!-- Nav Item - Dashboard -->
+             <!-- Nav Item - Schedule -->
              <li class="nav-item active">
-                 <a class="nav-link" href="/corridas">
+                 <a class="nav-link" href="../corridas">
                      <i class="fas fa-fw fa-calendar"></i>
                      <span>Calendario 2024</span></a>
              </li>
  
-             <!-- Nav Item - Dashboard -->
+             <!-- Nav Item - Send Guess -->
              <li class="nav-item active">
                  <a class="nav-link" href="index.html">
                      <i class="fas fa-fw fa-tachometer-alt"></i>
                      <span>Enviar Palpite</span></a>
              </li>
  
-             <!-- Nav Item - Dashboard -->
+             <!-- Nav Item - See others guesses -->
              <li class="nav-item active">
-                 <a class="nav-link" href="index.html">
+                 <a class="nav-link" href="../palpites">
                      <i class="fas fa-fw fa-chart-area"></i>
                      <span>Visualizar Palpites</span></a>
              </li>
  
-             <!-- Nav Item - Dashboard -->
+             <!-- Nav Item - race result -->
              <li class="nav-item active">
-                 <a class="nav-link" href="index.html">
+                 <a class="nav-link" href="../resultados">
                      <i class="fas fa-fw fa-check-square"></i>
                      <span>Resultado Etapa</span></a>
              </li>
  
-             <!-- Nav Item - Dashboard -->
+             <!-- Nav Item - Rank -->
              <li class="nav-item active">
-                 <a class="nav-link" href="index.html">
+                 <a class="nav-link" href="../rank">
                      <i class="fas fa-fw fa-list"></i>
                      <span>Ranking Geral</span></a>
              </li>
@@ -147,6 +147,30 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
+    <!-- Custom side bar toogle -->
+    <script>
+        // Espera que o documento esteja completamente carregado
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleciona o botão de alternância da barra lateral
+            const sidebarToggleBtn = document.getElementById('sidebarToggle');
+            // Seleciona a barra lateral
+            const sidebar = document.getElementById('accordionSidebar');
+
+            // Adiciona um ouvinte de eventos de clique ao botão de alternância da barra lateral
+            sidebarToggleBtn.addEventListener('click', function () {
+                // Alterna a classe 'sidebar-toggled' na barra lateral
+                sidebar.classList.toggle('sidebar-toggled');
+
+                // Se a barra lateral tiver a classe 'sidebar-toggled', adiciona a classe 'toggled' também
+                if (sidebar.classList.contains('sidebar-toggled')) {
+                    sidebar.classList.add('toggled');
+                } else {
+                    // Caso contrário, remove a classe 'toggled'
+                    sidebar.classList.remove('toggled');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

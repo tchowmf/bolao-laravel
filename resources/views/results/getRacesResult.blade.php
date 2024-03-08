@@ -1,5 +1,5 @@
 @extends('Template.blank')
-@section('title', "Vizualizar Palpites - Kart Timer")
+@section('title', "Resultado Etapa - Kart Timer")
 
 @section('contents')
     <!-- Page Heading -->
@@ -35,13 +35,13 @@
         <tbody>
             <tr>
                 @foreach($races as $race)
-                    <td onclick="location.href='/palpites/{{$race->country}}';" style="cursor: pointer; width: 25%; padding: 10px;">
+                    <td onclick="location.href='/resultados/{{$race->country}}';" style="cursor: pointer; width: 25%; padding: 10px;">
                         <div>
                             <span style="font-weight: bold;">{{ $race->city }}</span><br>
                             <div style="float: left; height: 80px; width: 10px;"></div>
                             <span style="font-size: 12px">@ {{ $race->country }}</span><br> <!-- IDENTIFICAR AS PISTAS PARA ASSOCIAÇÃO -->
                             <span style="font-size: 12px">{{ $race->laps }} voltas</span><br>
-                            <a style="font-size: 12px" ></a>
+                            <!-- <a style="font-size: 12px"></a> -->
                         </div>
                     </td>
                     @if($loop->iteration % 4 == 0)
