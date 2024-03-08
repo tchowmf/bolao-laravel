@@ -33,6 +33,7 @@
                     <option value="4">Tody</option>
                     <option value="5">Biro</option>
                     <option value="6">Tulhão</option>
+                    <option value="7">Sallasmandra</option>
                 </select>
 
                 <br><label class="form-label">Código</label>
