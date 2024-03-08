@@ -39,7 +39,3 @@ Route::get('/rank', [ResultsController::class, 'getRank']);
 
 Route::get('/enviar-palpite', [GuessController::class, 'getForm']);
 Route::post('/enviar-palpite', [GuessController::class, 'postGuess']);
-
-Route::get('/pilotos', function () {
-    return view([DriversController::class, 'getDrivers']);
-});

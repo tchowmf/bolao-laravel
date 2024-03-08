@@ -57,7 +57,7 @@
  
              <!-- Nav Item - Send Guess -->
              <li class="nav-item active">
-                 <a class="nav-link" href="index.html">
+                 <a class="nav-link" href="../enviar-palpite">
                      <i class="fas fa-fw fa-tachometer-alt"></i>
                      <span>Enviar Palpite</span></a>
              </li>
