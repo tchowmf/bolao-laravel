@@ -75,10 +75,10 @@ class GuessController extends Controller
             case 'ARÁBIA SAUDITA':
                 return view('guess.getGuessJeddah2024');
                 break;
-            /*case 'AUSTRÁLIA':
-                return view('guess.getAustralia2024');
+            case 'AUSTRÁLIA':
+                return view('guess.getGuessAustralia2024');
                 break;
-            case 'JAPÃO':
+            /*case 'JAPÃO':
                 return view('guess.getJapao2024');
                 break;
             case 'CHINA':
