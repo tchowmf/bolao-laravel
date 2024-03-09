@@ -44,7 +44,7 @@
                         <td>Lopes</td>
                         <td>N/A</td>
                         <td></td>
-                        <td>N/A/<td>
+                        <td>N/A<td>
                         <td>N/A</td>
                         <td>N/A</td>
                     </tr>
