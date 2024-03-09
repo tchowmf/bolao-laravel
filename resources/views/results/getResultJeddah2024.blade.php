@@ -23,43 +23,50 @@
                     <tr>
                         <td>1º</td>
                         <td>Tchowzin</td>
-                        <td>29</td>
-                        <td>10+8+6+5</td>
+                        <td>23</td>
+                        <td>10 + 8 + 5</td>
                     </tr>
 
                     <tr>
                         <td>2º</td>
-                        <td>Vinera</td>
-                        <td>29</td>
-                        <td>10+8+6+5</td>
+                        <td>Sallasmandra</td>
+                        <td>23</td>
+                        <td>10 + 8 + 5</td>
                     </tr>
 
                     <tr>
                         <td>3º</td>
                         <td>Lopes</td>
-                        <td>29</td>
-                        <td>10+8+6+5</td>
+                        <td>15</td>
+                        <td>10 + 5</td>
                     </tr>
 
                     <tr>
                         <td>4º</td>
-                        <td>Tody</td>
-                        <td>29</td>
-                        <td>10+8+6+5</td>
+                        <td>Vinera</td>
+                        <td>00</td>
+                        <td>00</td>
                     </tr>
 
                     <tr>
                         <td>5º</td>
+                        <td>Tody</td>
+                        <td>00</td>
+                        <td>00</td>
+                    </tr>
+
+                    <tr>
+                        <td>6º</td>
                         <td>Biro</td>
-                        <td>29</td>
-                        <td>10+8+6+5</td>
+                        <td>00</td>
+                        <td>00</td>
                     </tr>
 
                     <tr>
                         <td>6º</td>
                         <td>Tulhão</td>
-                        <td>29</td>
-                        <td>10+8+6+5</td>
+                        <td>00</td>
+                        <td>00</td>
                     </tr>
                 </tbody>
 

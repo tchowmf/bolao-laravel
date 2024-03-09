@@ -37,5 +37,8 @@ Route::group(['prefix' => 'resultados'], function() {
 
 Route::get('/rank', [ResultsController::class, 'getRank']);
 
-Route::get('/enviar-palpite', [GuessController::class, 'getForm']);
-Route::post('/enviar-palpite', [GuessController::class, 'postGuess']);
+Route::group(['prefix' => 'enviar-palpite'], function() {
+    Route::get('/', [GuessController::class, 'getForm']);
+    Route::post('/', [GuessController::class, 'postGuess']);
+});
+
