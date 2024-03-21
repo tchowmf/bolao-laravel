@@ -1,5 +1,5 @@
 @extends('Template.blank')
-@section('title', "Pilotos - Bolão F1 Pederneiras")
+@section('title', "Enviar Palpite - Bolão F1 Pederneiras")
 
 @section('contents')
 

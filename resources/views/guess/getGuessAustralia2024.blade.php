@@ -1,5 +1,5 @@
 @extends('Template.blank')
-@section('title', "Palpites do Bolão - GP Jeddah 2024")
+@section('title', "Palpites do Bolão - GP Melbourne 2024")
 
 @section('contents')
 
