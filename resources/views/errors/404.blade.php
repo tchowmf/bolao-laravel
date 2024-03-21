@@ -1,5 +1,5 @@
 @extends('Template.blank')
-@section('title', "Resultados do Bolão - GP Bahrein 2024")
+@section('title', "Erro 404 - Page not found")
 
 @section('contents')
 
