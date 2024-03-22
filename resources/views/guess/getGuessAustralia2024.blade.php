@@ -24,11 +24,11 @@
                 <tbody>
                     <tr>
                         <td>Tchowzin</td>
-                        <td>N/A</td>
+                        <td>CHARLES LECLERC</td>
                         <td></td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
+                        <td>MAX VERSTAPPEN</td>
+                        <td>CHARLES LECLERC</td>
+                        <td>CARLOS SAINZ</td>
                     </tr>
 
                     <tr>
