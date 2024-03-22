@@ -30,18 +30,18 @@
                         <td>CHARLES LECLERC</td>
                         <td>CARLOS SAINZ</td>
                     </tr>
-
+                    
                     <tr>
-                        <td>Sallasmandra</td>
-                        <td>N/A</td>
+                        <td>Lopes</td>
+                        <td>MAX VERSTAPPEN</td>
                         <td></td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
+                        <td>MAX VERSTAPPEN</td>
+                        <td>CHARLES LECLERC</td>
+                        <td>SERGIO PEREZ</td>
                     </tr>
 
                     <tr>
-                        <td>Lopes</td>
+                        <td>Sallasmandra</td>
                         <td>N/A</td>
                         <td></td>
                         <td>N/A</td>
