@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-flex justify-content-between mb-3">
-        <h2 class="h3 mb-0 text-gray-800">ENVIAR PALPITES - GP MELBOURNE 2024</h2>
+        <h2 class="h3 mb-0 text-gray-800">ENVIAR PALPITES - GP SUZUKA 2024</h2>
     </div>
     @if(session('success'))
         <div class="alert alert-success">
@@ -23,7 +23,7 @@
         <div class="card-body table-responsive">
             <form method="post" action="">
                 @CSRF
-                <input type="hidden" name="race_id" value="3"/>
+                <input type="hidden" name="race_id" value="4"/>
 
                 <label class="form-label">Participante</label>
                 <select name='user_id' class="form-control">

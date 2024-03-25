@@ -33,10 +33,10 @@ class ResultsController extends Controller
             case 'ARÁBIA SAUDITA':
                 return view('results.getResultJeddah2024');
                 break;
-            /*case 'AUSTRÁLIA':
-                return view('guess.getAustralia2024');
+            case 'AUSTRÁLIA':
+                return view('results.getResultAustralia2024');
                 break;
-            case 'JAPÃO':
+            /*case 'JAPÃO':
                 return view('guess.getJapao2024');
                 break;
             case 'CHINA':
